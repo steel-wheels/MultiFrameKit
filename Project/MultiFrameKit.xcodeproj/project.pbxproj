@@ -11,6 +11,8 @@
 		0519CD522DFEB35B004926F8 /* MFNativeValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0519CD502DFEB35B004926F8 /* MFNativeValue.swift */; };
 		0544D2162E27E66B00D67A4F /* MFContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0544D2152E27E66B00D67A4F /* MFContext.swift */; };
 		0544D2172E27E66B00D67A4F /* MFContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0544D2152E27E66B00D67A4F /* MFContext.swift */; };
+		0596491F2E5AEF03003A2595 /* MFImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0596491E2E5AEF03003A2595 /* MFImageView.swift */; };
+		059649202E5AEF03003A2595 /* MFImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0596491E2E5AEF03003A2595 /* MFImageView.swift */; };
 		05A0FC382E2558940021DF4A /* MFButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05A0FC372E2558940021DF4A /* MFButton.swift */; };
 		05A0FC392E2558940021DF4A /* MFButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05A0FC372E2558940021DF4A /* MFButton.swift */; };
 		05A0FC4C2E2716780021DF4A /* MultiDataKit.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05BDD2C62DFD6BD500D4372C /* MultiDataKit.xcframework */; };
@@ -77,6 +79,7 @@
 		0519CD502DFEB35B004926F8 /* MFNativeValue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MFNativeValue.swift; sourceTree = "<group>"; };
 		0544D2152E27E66B00D67A4F /* MFContext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MFContext.swift; sourceTree = "<group>"; };
 		059207F42E0A4CE600E19709 /* UnitTest_iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UnitTest_iOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0596491E2E5AEF03003A2595 /* MFImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MFImageView.swift; sourceTree = "<group>"; };
 		05A0FC372E2558940021DF4A /* MFButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MFButton.swift; sourceTree = "<group>"; };
 		05B0FB3C2E31387C00C7FAC6 /* MFStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MFStack.swift; sourceTree = "<group>"; };
 		05BDD2C22DFD678F00D4372C /* MFFrame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MFFrame.swift; sourceTree = "<group>"; };
@@ -175,6 +178,7 @@
 			children = (
 				05A0FC372E2558940021DF4A /* MFButton.swift */,
 				05E346D92E2BBABA009DFD0D /* MFDropView.swift */,
+				0596491E2E5AEF03003A2595 /* MFImageView.swift */,
 				05B0FB3C2E31387C00C7FAC6 /* MFStack.swift */,
 			);
 			path = Controls;
@@ -465,6 +469,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				05BDD2E22DFD866900D4372C /* MFObserverDictionary.swift in Sources */,
+				059649202E5AEF03003A2595 /* MFImageView.swift in Sources */,
 				05B0FB3D2E31387C00C7FAC6 /* MFStack.swift in Sources */,
 				05E346DA2E2BBABA009DFD0D /* MFDropView.swift in Sources */,
 				0519CD522DFEB35B004926F8 /* MFNativeValue.swift in Sources */,
@@ -481,6 +486,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				05BDD2E12DFD866900D4372C /* MFObserverDictionary.swift in Sources */,
+				0596491F2E5AEF03003A2595 /* MFImageView.swift in Sources */,
 				05B0FB3E2E31387C00C7FAC6 /* MFStack.swift in Sources */,
 				05E346DB2E2BBABA009DFD0D /* MFDropView.swift in Sources */,
 				05A0FC382E2558940021DF4A /* MFButton.swift in Sources */,

@@ -16,7 +16,7 @@ import  UIKit
 public class MFButton: MIButton, MFFrame
 {
         public static let FrameName            = "Button"
-        public static let TitleSlotName        = "title"
+        public static let TitleSlotName        = "title"        // NSString
         public static let ClickedEventName     = "clicked"
 
         private var mCore:      MFFrameCore? = nil
