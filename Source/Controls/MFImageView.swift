@@ -17,7 +17,7 @@ public class MFImageView: MIImageView, MFFrame
 {
         static let FrameName            = "Image"
 
-        public static let FileSlotName  = "title"       // NSURL
+        public static let FileSlotName  = "file"       // NSURL
 
         private var mCore:      MFFrameCore? = nil
         private var mContext:   MFContext?   = nil
