@@ -37,7 +37,7 @@ public class MFImageView: MIImageView, MFFrame
                 super.init(frame: frame)
                 self.coreTag = fid
 
-                let core = MFFrameCore(frameName: MFDropView.FrameName, frameId: fid, context: ctxt)
+                let core = MFFrameCore(frameName: MFImageView.FrameName, frameId: fid, context: ctxt)
                 mCore    = core
                 mContext = ctxt
 
