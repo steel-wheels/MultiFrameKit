@@ -13,7 +13,7 @@ import  AppKit
 import  UIKit
 #endif  // os(OSX)
 
-open class MFStack: MIStack, MFFrame
+public class MFStack: MIStack, MFFrame
 {
         static let FrameName = "Box"
 
@@ -30,7 +30,7 @@ open class MFStack: MIStack, MFFrame
                 mContext = ctxt
         }
 
-        required public init?(coder: NSCoder) {
+        @MainActor @preconcurrency required dynamic init?(coder: NSCoder) {
                 fatalError("init(coder:) has not been implemented")
         }
 

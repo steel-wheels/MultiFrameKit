@@ -1,6 +1,6 @@
 /**
- * @file        MFImageView.swift
- * @brief      Define MFImageView class
+ * @file        MFDropView.swift
+ * @brief      Define MFDropView class
  * @par Copyright
  *   Copyright (C) 2025 Steel Wheels Project
  */
@@ -13,16 +13,16 @@ import  AppKit
 import  UIKit
 #endif  // os(OSX)
 
-public class MFImageView: MIImageView, MFFrame
+open class MFDropView: MIDropView, MFFrame
 {
-        static let FrameName            = "Image"
-
-        public static let FileSlotName  = "file"       // NSURL
+        static let FrameName            = "Button"
 
         private var mCore:      MFFrameCore? = nil
         private var mContext:   MFContext?   = nil
-        
-        public var frameName: String { get { return MFImageView.FrameName }}
+
+        public var frameName: String { get {
+                return MFDropView.FrameName
+        }}
 
         public var core: MFFrameCore { get {
                 if let core = mCore {
@@ -40,20 +40,6 @@ public class MFImageView: MIImageView, MFFrame
                 let core = MFFrameCore(frameName: MFDropView.FrameName, frameId: fid, context: ctxt)
                 mCore    = core
                 mContext = ctxt
-
-                /* add listner for title */
-                core.addObserver(name: MFImageView.FileSlotName, listner: {
-                        (val: Any?) -> Void in
-                        if let file = val as? NSString {
-                                if let img = MIImage(contentsOf: URL(fileURLWithPath: file as String)) {
-                                        super.image = img
-                                } else {
-                                        NSLog("[Error] Failed to load image:\(file) at \(#file)")
-                                }
-                        } else {
-                                NSLog("[Error] Unexpected \(MFImageView.FileSlotName) value in \(#file)")
-                        }
-                })
         }
 
         @MainActor @preconcurrency required dynamic public init?(coder: NSCoder) {

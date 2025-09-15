@@ -31,6 +31,8 @@
 		05BDD2E22DFD866900D4372C /* MFObserverDictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05BDD2E02DFD866900D4372C /* MFObserverDictionary.swift */; };
 		05CED89E2E06CC110028C549 /* MFConsole.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05CED89D2E06CC110028C549 /* MFConsole.swift */; };
 		05CED89F2E06CC110028C549 /* MFConsole.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05CED89D2E06CC110028C549 /* MFConsole.swift */; };
+		05E346DA2E2BBABA009DFD0D /* MFDropView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05E346D92E2BBABA009DFD0D /* MFDropView.swift */; };
+		05E346DB2E2BBABA009DFD0D /* MFDropView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05E346D92E2BBABA009DFD0D /* MFDropView.swift */; };
 		05EEB6C22E06F73A000CC067 /* MultiUIKit.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05EEB6C12E06F73A000CC067 /* MultiUIKit.xcframework */; };
 		05EEB6C52E06F74C000CC067 /* MultiUIKit.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05EEB6C12E06F73A000CC067 /* MultiUIKit.xcframework */; };
 		05EEB71A2E07000F000CC067 /* MultiDataKit.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05BDD2C62DFD6BD500D4372C /* MultiDataKit.xcframework */; settings = {ATTRIBUTES = (Required, ); }; };
@@ -86,6 +88,7 @@
 		05CED89D2E06CC110028C549 /* MFConsole.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MFConsole.swift; sourceTree = "<group>"; };
 		05E1379A2DFD5D8100D668A1 /* MultiFrameKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MultiFrameKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		05E137AB2DFD5DD400D668A1 /* MultiFrameKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MultiFrameKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		05E346D92E2BBABA009DFD0D /* MFDropView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MFDropView.swift; sourceTree = "<group>"; };
 		05EEB6C12E06F73A000CC067 /* MultiUIKit.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = MultiUIKit.xcframework; path = ../../../Library/Frameworks/MultiUIKit.xcframework; sourceTree = "<group>"; };
 		05EEB7162E06FEC7000CC067 /* MultiFrameKit.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = MultiFrameKit.xcframework; path = ../../../Library/Frameworks/MultiFrameKit.xcframework; sourceTree = "<group>"; };
 		05FA0E512DFF0F7D00FB254C /* MFScriptValue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MFScriptValue.swift; sourceTree = "<group>"; };
@@ -174,6 +177,7 @@
 			isa = PBXGroup;
 			children = (
 				05A0FC372E2558940021DF4A /* MFButton.swift */,
+				05E346D92E2BBABA009DFD0D /* MFDropView.swift */,
 				0596491E2E5AEF03003A2595 /* MFImageView.swift */,
 				05B0FB3C2E31387C00C7FAC6 /* MFStack.swift */,
 			);
@@ -467,6 +471,7 @@
 				05BDD2E22DFD866900D4372C /* MFObserverDictionary.swift in Sources */,
 				059649202E5AEF03003A2595 /* MFImageView.swift in Sources */,
 				05B0FB3D2E31387C00C7FAC6 /* MFStack.swift in Sources */,
+				05E346DA2E2BBABA009DFD0D /* MFDropView.swift in Sources */,
 				0519CD522DFEB35B004926F8 /* MFNativeValue.swift in Sources */,
 				05A0FC392E2558940021DF4A /* MFButton.swift in Sources */,
 				05BDD2C32DFD678F00D4372C /* MFFrame.swift in Sources */,
@@ -483,6 +488,7 @@
 				05BDD2E12DFD866900D4372C /* MFObserverDictionary.swift in Sources */,
 				0596491F2E5AEF03003A2595 /* MFImageView.swift in Sources */,
 				05B0FB3E2E31387C00C7FAC6 /* MFStack.swift in Sources */,
+				05E346DB2E2BBABA009DFD0D /* MFDropView.swift in Sources */,
 				05A0FC382E2558940021DF4A /* MFButton.swift in Sources */,
 				0519CD512DFEB35B004926F8 /* MFNativeValue.swift in Sources */,
 				05BDD2C42DFD678F00D4372C /* MFFrame.swift in Sources */,
