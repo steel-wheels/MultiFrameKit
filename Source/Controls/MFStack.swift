@@ -44,10 +44,5 @@ public class MFStack: MIStack, MFFrame
                         fatalError("No core at \(#function)")
                 }
         }}
-
-        public var frameId: Int {
-                get      { return MFInterfaceTagToFrameId(interfaceTag: self.tag)       }
-                set(fid) { self.tag = MFFrameIdToInterfaceTag(frameId: fid)             }
-        }
 }
 

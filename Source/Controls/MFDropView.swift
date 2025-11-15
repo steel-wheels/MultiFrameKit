@@ -41,11 +41,6 @@ open class MFDropView: MIDropView, MFFrame
                 mContext = ctxt
         }
 
-        public var frameId: Int {
-                get      { return MFInterfaceTagToFrameId(interfaceTag: self.tag)       }
-                set(fid) { self.tag = MFFrameIdToInterfaceTag(frameId: fid)             }
-        }
-
         @MainActor @preconcurrency required dynamic public init?(coder: NSCoder) {
                 fatalError("init(coder:) has not been implemented")
         }

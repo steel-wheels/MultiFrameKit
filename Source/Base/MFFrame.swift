@@ -20,7 +20,6 @@ import JavaScriptCore
 @MainActor public protocol MFFrame
 {
         var frameName: String { get }
-        var frameId: Int { get set }
         var core: MFFrameCore { get }
 }
 
