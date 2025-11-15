@@ -20,12 +20,11 @@ public class MFStack: MIStack, MFFrame
         private var mContext:   MFContext?   = nil
         private var mCore:      MFFrameCore? = nil
 
-        public init(context ctxt: MFContext, frameId fid: Int){
+        public init(context ctxt: MFContext){
                 let frame = CGRect(x: 0.0, y: 0.0, width: 160, height: 32)
                 super.init(frame: frame)
-                self.coreTag = fid
 
-                let core = MFFrameCore(frameName: MFStack.FrameName, frameId: fid, context: ctxt)
+                let core = MFFrameCore(frameName: MFStack.FrameName, context: ctxt)
                 mCore    = core
                 mContext = ctxt
         }
@@ -45,5 +44,10 @@ public class MFStack: MIStack, MFFrame
                         fatalError("No core at \(#function)")
                 }
         }}
+
+        public var frameId: Int {
+                get      { return MFInterfaceTagToFrameId(interfaceTag: self.tag)       }
+                set(fid) { self.tag = MFFrameIdToInterfaceTag(frameId: fid)             }
+        }
 }
 

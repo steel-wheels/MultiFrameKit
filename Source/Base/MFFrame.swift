@@ -20,7 +20,17 @@ import JavaScriptCore
 @MainActor public protocol MFFrame
 {
         var frameName: String { get }
+        var frameId: Int { get set }
         var core: MFFrameCore { get }
+}
+
+public func MFInterfaceTagToFrameId(interfaceTag tag: Int) -> Int
+{
+        return tag != MINullTagId ? tag >> MITagBits : MINullTagId
+}
+
+public func MFFrameIdToInterfaceTag(frameId fid: Int) -> Int {
+        return fid != MINullTagId ? fid << MITagBits : MINullTagId
 }
 
 public extension MFFrame
@@ -50,7 +60,6 @@ public extension MFFrame
         public typealias ListnerHolder    = MFObserverDictionary.ListnerHolder
 
         private var mFrameName:         String
-        private var mFrameId:           Int
         private var mProperties:        MFObserverDictionary
         private var mChildren:          Array<MFFrame>
         private var mListnerHolders:    Array<ListnerHolder>
@@ -61,9 +70,8 @@ public extension MFFrame
                 return mChildren
         }}
 
-        public init(frameName fname: String, frameId fid: Int, context ctxt: MFContext) {
+        public init(frameName fname: String, context ctxt: MFContext) {
                 mFrameName      = fname
-                mFrameId        = fid
                 mProperties     = MFObserverDictionary()
                 mChildren       = []
                 mListnerHolders = []

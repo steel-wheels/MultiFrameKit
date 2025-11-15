@@ -32,12 +32,11 @@ public class MFImageView: MIImageView, MFFrame
                 }
         }}
 
-        public init(context ctxt: MFContext, frameId fid: Int){
+        public init(context ctxt: MFContext){
                 let frame = CGRect(x: 0.0, y: 0.0, width: 160, height: 32)
                 super.init(frame: frame)
-                self.coreTag = fid
 
-                let core = MFFrameCore(frameName: MFDropView.FrameName, frameId: fid, context: ctxt)
+                let core = MFFrameCore(frameName: MFDropView.FrameName, context: ctxt)
                 mCore    = core
                 mContext = ctxt
 
@@ -56,6 +55,11 @@ public class MFImageView: MIImageView, MFFrame
                 })
         }
 
+        public var frameId: Int {
+                get      { return MFInterfaceTagToFrameId(interfaceTag: self.tag)       }
+                set(fid) { self.tag = MFFrameIdToInterfaceTag(frameId: fid)             }
+        }
+        
         @MainActor @preconcurrency required dynamic public init?(coder: NSCoder) {
                 fatalError("init(coder:) has not been implemented")
         }
