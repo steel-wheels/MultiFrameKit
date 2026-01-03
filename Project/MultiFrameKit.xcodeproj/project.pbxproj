@@ -7,10 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0519CD512DFEB35B004926F8 /* MFNativeValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0519CD502DFEB35B004926F8 /* MFNativeValue.swift */; };
-		0519CD522DFEB35B004926F8 /* MFNativeValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0519CD502DFEB35B004926F8 /* MFNativeValue.swift */; };
 		0544D2162E27E66B00D67A4F /* MFContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0544D2152E27E66B00D67A4F /* MFContext.swift */; };
 		0544D2172E27E66B00D67A4F /* MFContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0544D2152E27E66B00D67A4F /* MFContext.swift */; };
+		057557D92F08BEBD00CD07A7 /* MultiDataKit.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05BDD2C62DFD6BD500D4372C /* MultiDataKit.xcframework */; };
+		057557DA2F08BEBD00CD07A7 /* MultiDataKit.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 05BDD2C62DFD6BD500D4372C /* MultiDataKit.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		057557DC2F08BEBF00CD07A7 /* MultiFrameKit.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05EEB7162E06FEC7000CC067 /* MultiFrameKit.xcframework */; };
+		057557DD2F08BEBF00CD07A7 /* MultiFrameKit.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 05EEB7162E06FEC7000CC067 /* MultiFrameKit.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		057557DE2F08BEC100CD07A7 /* MultiUIKit.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05EEB6C12E06F73A000CC067 /* MultiUIKit.xcframework */; };
+		057557DF2F08BEC100CD07A7 /* MultiUIKit.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 05EEB6C12E06F73A000CC067 /* MultiUIKit.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		057557E02F08BF9100CD07A7 /* JavaScriptKit.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05E3C6F02F0899B500D4F31B /* JavaScriptKit.xcframework */; };
+		057557E12F08BF9100CD07A7 /* JavaScriptKit.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 05E3C6F02F0899B500D4F31B /* JavaScriptKit.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		0596491F2E5AEF03003A2595 /* MFImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0596491E2E5AEF03003A2595 /* MFImageView.swift */; };
 		059649202E5AEF03003A2595 /* MFImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0596491E2E5AEF03003A2595 /* MFImageView.swift */; };
 		05A0FC382E2558940021DF4A /* MFButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05A0FC372E2558940021DF4A /* MFButton.swift */; };
@@ -33,13 +39,10 @@
 		05CED89F2E06CC110028C549 /* MFConsole.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05CED89D2E06CC110028C549 /* MFConsole.swift */; };
 		05E346DA2E2BBABA009DFD0D /* MFDropView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05E346D92E2BBABA009DFD0D /* MFDropView.swift */; };
 		05E346DB2E2BBABA009DFD0D /* MFDropView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05E346D92E2BBABA009DFD0D /* MFDropView.swift */; };
+		05E3C6F12F0899B500D4F31B /* JavaScriptKit.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05E3C6F02F0899B500D4F31B /* JavaScriptKit.xcframework */; };
+		05E3C6F42F0899D000D4F31B /* JavaScriptKit.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05E3C6F02F0899B500D4F31B /* JavaScriptKit.xcframework */; };
 		05EEB6C22E06F73A000CC067 /* MultiUIKit.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05EEB6C12E06F73A000CC067 /* MultiUIKit.xcframework */; };
 		05EEB6C52E06F74C000CC067 /* MultiUIKit.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05EEB6C12E06F73A000CC067 /* MultiUIKit.xcframework */; };
-		05EEB71A2E07000F000CC067 /* MultiDataKit.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05BDD2C62DFD6BD500D4372C /* MultiDataKit.xcframework */; settings = {ATTRIBUTES = (Required, ); }; };
-		05EEB71B2E07000F000CC067 /* MultiFrameKit.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05EEB7162E06FEC7000CC067 /* MultiFrameKit.xcframework */; };
-		05EEB71C2E07000F000CC067 /* MultiUIKit.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05EEB6C12E06F73A000CC067 /* MultiUIKit.xcframework */; };
-		05FA0E522DFF0F7D00FB254C /* MFScriptValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05FA0E512DFF0F7D00FB254C /* MFScriptValue.swift */; };
-		05FA0E532DFF0F7D00FB254C /* MFScriptValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05FA0E512DFF0F7D00FB254C /* MFScriptValue.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +63,20 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
+		057557DB2F08BEBE00CD07A7 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				057557DD2F08BEBF00CD07A7 /* MultiFrameKit.xcframework in Embed Frameworks */,
+				057557DF2F08BEC100CD07A7 /* MultiUIKit.xcframework in Embed Frameworks */,
+				057557DA2F08BEBD00CD07A7 /* MultiDataKit.xcframework in Embed Frameworks */,
+				057557E12F08BF9100CD07A7 /* JavaScriptKit.xcframework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		05A0FC522E2716780021DF4A /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -76,7 +93,6 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		0519CD502DFEB35B004926F8 /* MFNativeValue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MFNativeValue.swift; sourceTree = "<group>"; };
 		0544D2152E27E66B00D67A4F /* MFContext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MFContext.swift; sourceTree = "<group>"; };
 		059207F42E0A4CE600E19709 /* UnitTest_iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UnitTest_iOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0596491E2E5AEF03003A2595 /* MFImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MFImageView.swift; sourceTree = "<group>"; };
@@ -89,9 +105,9 @@
 		05E1379A2DFD5D8100D668A1 /* MultiFrameKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MultiFrameKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		05E137AB2DFD5DD400D668A1 /* MultiFrameKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MultiFrameKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		05E346D92E2BBABA009DFD0D /* MFDropView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MFDropView.swift; sourceTree = "<group>"; };
+		05E3C6F02F0899B500D4F31B /* JavaScriptKit.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = JavaScriptKit.xcframework; path = ../../../Library/Frameworks/JavaScriptKit.xcframework; sourceTree = "<group>"; };
 		05EEB6C12E06F73A000CC067 /* MultiUIKit.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = MultiUIKit.xcframework; path = ../../../Library/Frameworks/MultiUIKit.xcframework; sourceTree = "<group>"; };
 		05EEB7162E06FEC7000CC067 /* MultiFrameKit.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = MultiFrameKit.xcframework; path = ../../../Library/Frameworks/MultiFrameKit.xcframework; sourceTree = "<group>"; };
-		05FA0E512DFF0F7D00FB254C /* MFScriptValue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MFScriptValue.swift; sourceTree = "<group>"; };
 		05FA0E582E02664300FB254C /* UnitTest_macOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UnitTest_macOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -147,6 +163,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				05EEB6C22E06F73A000CC067 /* MultiUIKit.xcframework in Frameworks */,
+				05E3C6F12F0899B500D4F31B /* JavaScriptKit.xcframework in Frameworks */,
 				05BDD2C72DFD6BD500D4372C /* MultiDataKit.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -156,6 +173,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				05EEB6C52E06F74C000CC067 /* MultiUIKit.xcframework in Frameworks */,
+				05E3C6F42F0899D000D4F31B /* JavaScriptKit.xcframework in Frameworks */,
 				05BDD2CA2DFD6BF200D4372C /* MultiDataKit.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -164,9 +182,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				05EEB71A2E07000F000CC067 /* MultiDataKit.xcframework in Frameworks */,
-				05EEB71B2E07000F000CC067 /* MultiFrameKit.xcframework in Frameworks */,
-				05EEB71C2E07000F000CC067 /* MultiUIKit.xcframework in Frameworks */,
+				057557DC2F08BEBF00CD07A7 /* MultiFrameKit.xcframework in Frameworks */,
+				057557DE2F08BEC100CD07A7 /* MultiUIKit.xcframework in Frameworks */,
+				057557D92F08BEBD00CD07A7 /* MultiDataKit.xcframework in Frameworks */,
+				057557E02F08BF9100CD07A7 /* JavaScriptKit.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -201,8 +220,6 @@
 				0544D2152E27E66B00D67A4F /* MFContext.swift */,
 				05BDD2C22DFD678F00D4372C /* MFFrame.swift */,
 				05BDD2E02DFD866900D4372C /* MFObserverDictionary.swift */,
-				0519CD502DFEB35B004926F8 /* MFNativeValue.swift */,
-				05FA0E512DFF0F7D00FB254C /* MFScriptValue.swift */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -210,6 +227,7 @@
 		05BDD2C52DFD6BD500D4372C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				05E3C6F02F0899B500D4F31B /* JavaScriptKit.xcframework */,
 				05EEB7162E06FEC7000CC067 /* MultiFrameKit.xcframework */,
 				05EEB6C12E06F73A000CC067 /* MultiUIKit.xcframework */,
 				05BDD2C62DFD6BD500D4372C /* MultiDataKit.xcframework */,
@@ -374,6 +392,7 @@
 				05FA0E542E02664300FB254C /* Sources */,
 				05FA0E562E02664300FB254C /* Resources */,
 				05EEB7192E06FFEE000CC067 /* Frameworks */,
+				057557DB2F08BEBE00CD07A7 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -397,7 +416,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1640;
-				LastUpgradeCheck = 1640;
+				LastUpgradeCheck = 2620;
 				TargetAttributes = {
 					059207F32E0A4CE600E19709 = {
 						CreatedOnToolsVersion = 16.4;
@@ -472,12 +491,10 @@
 				059649202E5AEF03003A2595 /* MFImageView.swift in Sources */,
 				05B0FB3D2E31387C00C7FAC6 /* MFStack.swift in Sources */,
 				05E346DA2E2BBABA009DFD0D /* MFDropView.swift in Sources */,
-				0519CD522DFEB35B004926F8 /* MFNativeValue.swift in Sources */,
 				05A0FC392E2558940021DF4A /* MFButton.swift in Sources */,
 				05BDD2C32DFD678F00D4372C /* MFFrame.swift in Sources */,
 				05CED89E2E06CC110028C549 /* MFConsole.swift in Sources */,
 				0544D2162E27E66B00D67A4F /* MFContext.swift in Sources */,
-				05FA0E532DFF0F7D00FB254C /* MFScriptValue.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -490,10 +507,8 @@
 				05B0FB3E2E31387C00C7FAC6 /* MFStack.swift in Sources */,
 				05E346DB2E2BBABA009DFD0D /* MFDropView.swift in Sources */,
 				05A0FC382E2558940021DF4A /* MFButton.swift in Sources */,
-				0519CD512DFEB35B004926F8 /* MFNativeValue.swift in Sources */,
 				05BDD2C42DFD678F00D4372C /* MFFrame.swift in Sources */,
 				05CED89F2E06CC110028C549 /* MFConsole.swift in Sources */,
-				05FA0E522DFF0F7D00FB254C /* MFScriptValue.swift in Sources */,
 				0544D2172E27E66B00D67A4F /* MFContext.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -536,7 +551,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 18.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -566,7 +581,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 18.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -617,6 +632,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				DEVELOPMENT_TEAM = TR2DNF3P93;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -642,6 +658,7 @@
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = macosx;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				VERSIONING_SYSTEM = "apple-generic";
@@ -684,6 +701,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_TEAM = TR2DNF3P93;
 				ENABLE_NS_ASSERTIONS = NO;
@@ -702,6 +720,7 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = macosx;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -715,6 +734,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_TEAM = TR2DNF3P93;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -729,6 +749,7 @@
 					"@executable_path/../Frameworks",
 					"@loader_path/Frameworks",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 26.0;
 				MARKETING_VERSION = 1.0;
 				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
 				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
@@ -750,6 +771,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_TEAM = TR2DNF3P93;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -764,6 +786,7 @@
 					"@executable_path/../Frameworks",
 					"@loader_path/Frameworks",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 26.0;
 				MARKETING_VERSION = 1.0;
 				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
 				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
@@ -793,7 +816,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INSTALL_PATH = "$(HOME)/Library/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 18.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -833,7 +856,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INSTALL_PATH = "$(HOME)/Library/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 18.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -863,6 +886,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUGGING_SYMBOLS = YES;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				DEVELOPMENT_TEAM = TR2DNF3P93;
@@ -878,6 +902,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_TEAM = TR2DNF3P93;
 				OTHER_CFLAGS = "";
@@ -895,8 +920,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_TEAM = TR2DNF3P93;
+				ENABLE_APP_SANDBOX = YES;
 				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_USER_SELECTED_FILES = readonly;
 				GCC_OPTIMIZATION_LEVEL = 1;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
@@ -906,6 +934,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 26.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.github.steel-wheels.MIFrame.install.UnitTest-macOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -924,8 +953,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_TEAM = TR2DNF3P93;
+				ENABLE_APP_SANDBOX = YES;
 				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_USER_SELECTED_FILES = readonly;
 				GCC_OPTIMIZATION_LEVEL = 1;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
@@ -935,6 +967,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 26.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.github.steel-wheels.MIFrame.install.UnitTest-macOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";

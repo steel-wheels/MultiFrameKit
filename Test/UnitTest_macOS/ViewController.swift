@@ -22,7 +22,7 @@ class ViewController: MIViewController
                 let vm   = JSVirtualMachine()
                 let ctxt = MFContext(virtualMachine: vm)
 
-                let button0 = MFButton(context: ctxt, frameId: 0)
+                let button0 = MFButton(context: ctxt)
                 mRootView.addSubview(button0)
         }
 
