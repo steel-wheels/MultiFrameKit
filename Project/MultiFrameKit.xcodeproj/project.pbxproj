@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0544D2162E27E66B00D67A4F /* MFContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0544D2152E27E66B00D67A4F /* MFContext.swift */; };
-		0544D2172E27E66B00D67A4F /* MFContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0544D2152E27E66B00D67A4F /* MFContext.swift */; };
 		057557D92F08BEBD00CD07A7 /* MultiDataKit.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05BDD2C62DFD6BD500D4372C /* MultiDataKit.xcframework */; };
 		057557DA2F08BEBD00CD07A7 /* MultiDataKit.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 05BDD2C62DFD6BD500D4372C /* MultiDataKit.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		057557DC2F08BEBF00CD07A7 /* MultiFrameKit.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05EEB7162E06FEC7000CC067 /* MultiFrameKit.xcframework */; };
@@ -93,7 +91,6 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		0544D2152E27E66B00D67A4F /* MFContext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MFContext.swift; sourceTree = "<group>"; };
 		059207F42E0A4CE600E19709 /* UnitTest_iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UnitTest_iOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0596491E2E5AEF03003A2595 /* MFImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MFImageView.swift; sourceTree = "<group>"; };
 		05A0FC372E2558940021DF4A /* MFButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MFButton.swift; sourceTree = "<group>"; };
@@ -217,7 +214,6 @@
 			isa = PBXGroup;
 			children = (
 				05CED89D2E06CC110028C549 /* MFConsole.swift */,
-				0544D2152E27E66B00D67A4F /* MFContext.swift */,
 				05BDD2C22DFD678F00D4372C /* MFFrame.swift */,
 				05BDD2E02DFD866900D4372C /* MFObserverDictionary.swift */,
 			);
@@ -494,7 +490,6 @@
 				05A0FC392E2558940021DF4A /* MFButton.swift in Sources */,
 				05BDD2C32DFD678F00D4372C /* MFFrame.swift in Sources */,
 				05CED89E2E06CC110028C549 /* MFConsole.swift in Sources */,
-				0544D2162E27E66B00D67A4F /* MFContext.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -509,7 +504,6 @@
 				05A0FC382E2558940021DF4A /* MFButton.swift in Sources */,
 				05BDD2C42DFD678F00D4372C /* MFFrame.swift in Sources */,
 				05CED89F2E06CC110028C549 /* MFConsole.swift in Sources */,
-				0544D2172E27E66B00D67A4F /* MFContext.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
