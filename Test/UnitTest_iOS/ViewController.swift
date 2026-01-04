@@ -22,7 +22,7 @@ class ViewController: UIViewController
 
                 // Do any additional setup after loading the view.
                 let vm   = JSVirtualMachine()
-                let ctxt = MFContext(virtualMachine: vm)
+                let ctxt = KSContext(virtualMachine: vm)
                 
                 let button0 = MFButton(context: ctxt, frameId: 0)
                 mRootView.addSubview(button0)

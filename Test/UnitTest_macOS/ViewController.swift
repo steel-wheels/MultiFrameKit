@@ -23,6 +23,12 @@ class ViewController: MIViewController
                 let vm   = JSVirtualMachine()
                 let ctxt = KSContext(virtualMachine: vm)
 
+                let lib     = MFLibrary()
+                let storage = MITextStorage()
+                if let err = lib.load(into: ctxt, storage: storage) {
+                        NSLog("[Error] \(err.description)")
+                }
+
                 let button0 = MFButton(context: ctxt)
                 mRootView.addSubview(button0)
         }
