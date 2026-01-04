@@ -105,14 +105,14 @@ public extension MFFrame
         }
 
         public func setValue(name nm: String, value val: MIValue) {
-                mProperties.setNativeValue(val, forKey: nm)
+                mProperties.setValue(val.toObject(), forKey: nm)
         }
 
         public func _setValue(_ name: JSValue, _ val: JSValue) -> JSValue {
                 guard let nmstr = _name(name: name) else {
                         return JSValue(bool: false, in: mContext)
                 }
-                mProperties.setScriptValue(val, forKey: nmstr)
+                mProperties.setValue(val, forKey: nmstr)
                 return JSValue(bool: true, in: mContext)
         }
 

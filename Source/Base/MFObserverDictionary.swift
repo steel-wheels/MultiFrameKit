@@ -85,12 +85,8 @@ public class MFObserverDictionary
                 return result
         }}
 
-        public func setNativeValue(_ val: MIValue, forKey key: String){
-                mValueTable.setValue(val.toObject(), forKey: key)
-        }
-
-        public func setScriptValue(_ val: JSValue, forKey key: String){
-                mValueTable.setValue(val.toObject(), forKey: key)
+        public func setValue(_ val: NSObject, forKey key: String){
+                mValueTable.setValue(val, forKey: key)
         }
 
         public func value(forKey k: String) -> NSObject? {
