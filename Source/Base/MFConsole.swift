@@ -6,6 +6,7 @@
  */
 
 import MultiUIKit
+import JavaScriptKit
 import JavaScriptCore
 import Foundation
 
@@ -21,7 +22,7 @@ import Foundation
 
         public static let VariableName = "console"
 
-        public static func setup(storage strg: MITextStorage, context ctxt: MFContext){
+        public static func setup(storage strg: MITextStorage, context ctxt: KSContext){
                 let console = MIConsole(storage: strg)
                 let value   = JSValue(object: console, in: ctxt)
                 ctxt.setObject(value, forKeyedSubscript: MFConsole.InstanceName as NSString)

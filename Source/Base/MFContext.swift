@@ -5,6 +5,7 @@
  *   Copyright (C) 2025 Steel Wheels Project
  */
 
+/*
 import MultiDataKit
 import Foundation
 import JavaScriptCore
@@ -88,3 +89,5 @@ public class MFContext: JSContext
                 return mErrorCount - preverr
         }
 }
+*/
+

@@ -6,6 +6,7 @@
  */
 
 import MultiUIKit
+import JavaScriptKit
 import JavaScriptCore
 #if os(OSX)
 import  AppKit
@@ -17,10 +18,10 @@ public class MFStack: MIStack, MFFrame
 {
         static let FrameName = "Box"
 
-        private var mContext:   MFContext?   = nil
+        private var mContext:   KSContext?   = nil
         private var mCore:      MFFrameCore? = nil
 
-        public init(context ctxt: MFContext){
+        public init(context ctxt: KSContext){
                 let frame = CGRect(x: 0.0, y: 0.0, width: 160, height: 32)
                 super.init(frame: frame)
 

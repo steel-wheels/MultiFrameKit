@@ -7,6 +7,7 @@
 
 import MultiFrameKit
 import MultiUIKit
+import JavaScriptKit
 import JavaScriptCore
 import Cocoa
 
@@ -20,7 +21,7 @@ class ViewController: MIViewController
 
                 // Do any additional setup after loading the view.
                 let vm   = JSVirtualMachine()
-                let ctxt = MFContext(virtualMachine: vm)
+                let ctxt = KSContext(virtualMachine: vm)
 
                 let button0 = MFButton(context: ctxt)
                 mRootView.addSubview(button0)
