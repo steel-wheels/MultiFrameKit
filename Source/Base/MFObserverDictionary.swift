@@ -5,9 +5,6 @@
  *   Copyright (C) 2025 Steel Wheels Project
  */
 
-import MultiDataKit
-import JavaScriptKit
-import JavaScriptCore
 import Foundation
 
 public class MFObserverDictionary
@@ -24,13 +21,11 @@ public class MFObserverDictionary
                 }
         }
 
-        private var mContext:           KSContext
         private var mValueTable:        NSMutableDictionary
         private var mObservers:         Dictionary<String, MIObjectListener>
         private var mListnerId:         Int
 
-        public init(context ctxt: KSContext){
-                mContext    = ctxt
+        public init(){
                 mValueTable = NSMutableDictionary(capacity: 32)
                 mObservers  = [:]
                 mListnerId  = 0
@@ -57,32 +52,12 @@ public class MFObserverDictionary
                 return mValueTable.count
         }}
 
-        public var nativeValues: Array<MIValue> { get {
-                var result: Array<MIValue> = []
-                for elm in mValueTable.allValues {
-                        if let obj = elm as? NSObject {
-                                result.append(MIValue.fromObject(object: obj))
-                        } else {
-                                NSLog("[Error] Unexpected object at \(#file)")
-                        }
-                }
-                return result
+        public var values: Array<Any> { get {
+                return mValueTable.allValues
         }}
 
-        public var scriptValues: Array<JSValue> { get {
-                var result: Array<JSValue> = []
-                for elm in mValueTable.allValues {
-                        if let obj = elm as? NSObject {
-                                if let val = JSValue(object: obj, in: mContext) {
-                                        result.append(val)
-                                } else {
-                                        NSLog("[Error] Failed to allocate JSValue at \(#file)")
-                                }
-                        } else {
-                                NSLog("[Error] Unexpected object at \(#file)")
-                        }
-                }
-                return result
+        public var core: NSMutableDictionary { get {
+                return mValueTable
         }}
 
         public func setValue(_ val: NSObject, forKey key: String){
@@ -92,6 +67,19 @@ public class MFObserverDictionary
         public func value(forKey k: String) -> NSObject? {
                 if let obj =  mValueTable.value(forKey: k) as? NSObject {
                         return obj
+                } else {
+                        return nil
+                }
+        }
+
+        public func setBooleanValue(_ bval: Bool, forKey key: String){
+                let bobj = NSNumber(booleanLiteral: bval)
+                setValue(bobj, forKey: key)
+        }
+
+        public func booleanValue(forKey key: String) -> Bool? {
+                if let obj = value(forKey: key) as? NSNumber {
+                        return obj.boolValue
                 } else {
                         return nil
                 }

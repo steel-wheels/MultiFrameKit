@@ -6,7 +6,6 @@
  */
 
 import MultiUIKit
-import JavaScriptKit
 import JavaScriptCore
 #if os(OSX)
 import  AppKit
@@ -21,8 +20,8 @@ public class MFImageView: MIImageView, MFFrame
         public static let FileSlotName  = "file"       // NSURL
 
         private var mCore:      MFFrameCore? = nil
-        private var mContext:   KSContext?   = nil
-
+        private var mContext:   MFContext?   = nil
+        
         public var frameName: String { get { return MFImageView.FrameName }}
 
         public var core: MFFrameCore { get {
@@ -33,7 +32,7 @@ public class MFImageView: MIImageView, MFFrame
                 }
         }}
 
-        public init(context ctxt: KSContext){
+        public init(context ctxt: MFContext){
                 let frame = CGRect(x: 0.0, y: 0.0, width: 160, height: 32)
                 super.init(frame: frame)
 

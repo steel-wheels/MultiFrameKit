@@ -7,7 +7,6 @@
 
 import MultiUIKit
 import MultiFrameKit
-import JavaScriptKit
 import UIKit
 import JavaScriptCore
 
@@ -22,13 +21,10 @@ class ViewController: UIViewController
                 // Do any additional setup after loading the view.
 
                 // Do any additional setup after loading the view.
-                guard let vm = JSVirtualMachine() else {
-                        NSLog("[Error] Failed to allocate VM at \(#file)")
-                        return
-                }
-                let ctxt = KSContext(virtualMachine: vm)
-
-                let button0 = MFButton(context: ctxt)
+                let vm   = JSVirtualMachine()
+                let ctxt = MFContext(virtualMachine: vm)
+                
+                let button0 = MFButton(context: ctxt, frameId: 0)
                 mRootView.addSubview(button0)
         }
 }

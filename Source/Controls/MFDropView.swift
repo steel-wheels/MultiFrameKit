@@ -6,7 +6,6 @@
  */
 
 import MultiUIKit
-import JavaScriptKit
 import JavaScriptCore
 #if os(OSX)
 import  AppKit
@@ -19,7 +18,7 @@ open class MFDropView: MIDropView, MFFrame
         static let FrameName            = "Button"
 
         private var mCore:      MFFrameCore? = nil
-        private var mContext:   KSContext?   = nil
+        private var mContext:   MFContext?   = nil
 
         public var frameName: String { get {
                 return MFDropView.FrameName
@@ -33,7 +32,7 @@ open class MFDropView: MIDropView, MFFrame
                 }
         }}
 
-        public init(context ctxt: KSContext){
+        public init(context ctxt: MFContext){
                 let frame = CGRect(x: 0.0, y: 0.0, width: 160, height: 32)
                 super.init(frame: frame)
 

@@ -7,7 +7,6 @@
 
 import MultiUIKit
 import MultiDataKit
-import JavaScriptKit
 import Foundation
 import JavaScriptCore
 
@@ -63,16 +62,16 @@ public extension MFFrame
         private var mProperties:        MFObserverDictionary
         private var mChildren:          Array<MFFrame>
         private var mListnerHolders:    Array<ListnerHolder>
-        private var mContext:           KSContext
+        private var mContext:           MFContext
 
         public var parent:              MFFrame?
         public var children: Array<MFFrame> { get {
                 return mChildren
         }}
 
-        public init(frameName fname: String, context ctxt: KSContext) {
+        public init(frameName fname: String, context ctxt: MFContext) {
                 mFrameName      = fname
-                mProperties     = MFObserverDictionary(context: ctxt)
+                mProperties     = MFObserverDictionary()
                 mChildren       = []
                 mListnerHolders = []
                 mContext        = ctxt
