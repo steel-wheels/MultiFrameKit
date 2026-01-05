@@ -31,8 +31,6 @@
 		05BDD2C42DFD678F00D4372C /* MFFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05BDD2C22DFD678F00D4372C /* MFFrame.swift */; };
 		05BDD2C72DFD6BD500D4372C /* MultiDataKit.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05BDD2C62DFD6BD500D4372C /* MultiDataKit.xcframework */; };
 		05BDD2CA2DFD6BF200D4372C /* MultiDataKit.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05BDD2C62DFD6BD500D4372C /* MultiDataKit.xcframework */; };
-		05BDD2E12DFD866900D4372C /* MFObserverDictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05BDD2E02DFD866900D4372C /* MFObserverDictionary.swift */; };
-		05BDD2E22DFD866900D4372C /* MFObserverDictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05BDD2E02DFD866900D4372C /* MFObserverDictionary.swift */; };
 		05CED89E2E06CC110028C549 /* MFConsole.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05CED89D2E06CC110028C549 /* MFConsole.swift */; };
 		05CED89F2E06CC110028C549 /* MFConsole.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05CED89D2E06CC110028C549 /* MFConsole.swift */; };
 		05DCB0122F0A399C000C12C4 /* MFLibrary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05DCB0112F0A399C000C12C4 /* MFLibrary.swift */; };
@@ -99,7 +97,6 @@
 		05B0FB3C2E31387C00C7FAC6 /* MFStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MFStack.swift; sourceTree = "<group>"; };
 		05BDD2C22DFD678F00D4372C /* MFFrame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MFFrame.swift; sourceTree = "<group>"; };
 		05BDD2C62DFD6BD500D4372C /* MultiDataKit.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = MultiDataKit.xcframework; path = ../../../Library/Frameworks/MultiDataKit.xcframework; sourceTree = "<group>"; };
-		05BDD2E02DFD866900D4372C /* MFObserverDictionary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MFObserverDictionary.swift; sourceTree = "<group>"; };
 		05CED89D2E06CC110028C549 /* MFConsole.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MFConsole.swift; sourceTree = "<group>"; };
 		05DCB0112F0A399C000C12C4 /* MFLibrary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MFLibrary.swift; sourceTree = "<group>"; };
 		05E1379A2DFD5D8100D668A1 /* MultiFrameKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MultiFrameKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -219,7 +216,6 @@
 				05CED89D2E06CC110028C549 /* MFConsole.swift */,
 				05BDD2C22DFD678F00D4372C /* MFFrame.swift */,
 				05DCB0112F0A399C000C12C4 /* MFLibrary.swift */,
-				05BDD2E02DFD866900D4372C /* MFObserverDictionary.swift */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -488,7 +484,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				05DCB0132F0A399C000C12C4 /* MFLibrary.swift in Sources */,
-				05BDD2E22DFD866900D4372C /* MFObserverDictionary.swift in Sources */,
 				059649202E5AEF03003A2595 /* MFImageView.swift in Sources */,
 				05B0FB3D2E31387C00C7FAC6 /* MFStack.swift in Sources */,
 				05E346DA2E2BBABA009DFD0D /* MFDropView.swift in Sources */,
@@ -503,7 +498,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				05DCB0122F0A399C000C12C4 /* MFLibrary.swift in Sources */,
-				05BDD2E12DFD866900D4372C /* MFObserverDictionary.swift in Sources */,
 				0596491F2E5AEF03003A2595 /* MFImageView.swift in Sources */,
 				05B0FB3E2E31387C00C7FAC6 /* MFStack.swift in Sources */,
 				05E346DB2E2BBABA009DFD0D /* MFDropView.swift in Sources */,

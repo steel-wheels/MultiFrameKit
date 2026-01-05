@@ -35,7 +35,7 @@ public func MFFrameIdToInterfaceTag(frameId fid: Int) -> Int {
 
 public extension MFFrame
 {
-        typealias ListenerFunction = MFObserverDictionary.ListenerFunction
+        typealias ListenerFunction = MIObserverDictionary.ListenerFunction
 
         func value(name nm: String) -> MIValue? {
                 if let obj = self.core.value(name: nm) {
@@ -56,11 +56,11 @@ public extension MFFrame
 
 @objc public class MFFrameCore: NSObject, MFFrameCoreProtorol
 {
-        public typealias ListenerFunction = MFObserverDictionary.ListenerFunction
-        public typealias ListnerHolder    = MFObserverDictionary.ListnerHolder
+        public typealias ListenerFunction = MIObserverDictionary.ListenerFunction
+        public typealias ListnerHolder    = MIObserverDictionary.ListnerHolder
 
         private var mFrameName:         String
-        private var mProperties:        MFObserverDictionary
+        private var mProperties:        MIObserverDictionary
         private var mChildren:          Array<MFFrame>
         private var mListnerHolders:    Array<ListnerHolder>
         private var mContext:           KSContext
@@ -72,7 +72,7 @@ public extension MFFrame
 
         public init(frameName fname: String, context ctxt: KSContext) {
                 mFrameName      = fname
-                mProperties     = MFObserverDictionary()
+                mProperties     = MIObserverDictionary()
                 mChildren       = []
                 mListnerHolders = []
                 mContext        = ctxt
